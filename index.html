@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./scripts.js"></script>
+  <title>To-Do Filtering</title>
+</head>
+<body>
+  <button onclick="fetchTodos()">Fetch Todos</button>
+  <button onclick="logTodos()">Log Todos</button>
+  <button onclick="populateTodos()">Populate All Todos</button>
+
+  <form>
+    <label for="number">Enter a Number Between 1 and 10</label>
+    <input type="number" name="number" id="number" min="1" max="10">
+    <button type="button" onclick="filterTodos()">Filter Todos By User ID</button>
+  </form>
+
+  <!-- <button onclick="completedTodos()">Completed Todos</button>
+  <button onclick="notCompletedTodos()">Not Completed Todos</button> -->
+
+  <ol id="todo-list">
+
+  </ol>
+</body>
+</html>
