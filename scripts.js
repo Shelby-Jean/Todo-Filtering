@@ -46,3 +46,25 @@ const filterTodos = () => {
 
   populateTodos();
 }
+
+const completedTodos = () => {
+  let todoList = document.getElementById("todo-list");
+  todoList.innerHTML = null;
+
+  arrayofTodos = arrayofTodos.filter(function(todo) {
+    return todo.completed == true;
+  });
+
+  populateTodos();
+}
+
+const notCompletedTodos = () => {
+  let todoList = document.getElementById("todo-list");
+  todoList.innerHTML = null;
+
+  arrayofTodos = arrayofTodos.filter(function(todo) {
+    return todo.completed == false;
+  });
+
+  populateTodos();
+}
